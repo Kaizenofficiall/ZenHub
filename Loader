@@ -1,0 +1,26 @@
+local HttpService = game:GetService("HttpService")
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/gamesjson/main/Loader"))()
+local games = game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/gamesjson/main/games.json")
+
+function init(ui)
+    print("1")
+    local decoded = HttpService:JSONDecode(games)
+    print("1 - s")
+    for i,v in pairs(decoded) do
+        if v.GameId == game.PlaceId then
+            print("2")
+--           print(v.Script)
+            loadstring(game:HttpGet(v.Script, true))()
+wait("1")
+            ui:Destroy()
+        else
+            wait(0.2)
+        end
+    end
+end
+
+local loader = lib:CreateWindow("Zen Hub - Loader")
+loader:CreateLabel("Press Load to get started.")
+loader:CreateButton("Load", function()
+    init(loader)
+end)
