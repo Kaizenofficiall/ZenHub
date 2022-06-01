@@ -1,26 +1,15 @@
-local HttpService = game:GetService("HttpService")
-local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/gamesjson/main/Loader"))()
-local games = game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/gamesjson/main/games.json")
-
-function init(ui)
-    print("1")
-    local decoded = HttpService:JSONDecode(games)
-    print("1 - s")
-    for i,v in pairs(decoded) do
-        if v.GameId == game.PlaceId then
-            print("2")
---           print(v.Script)
-            loadstring(game:HttpGet(v.Script, true))()
-wait("1")
-            ui:Destroy()
-        else
-            wait(0.2)
-        end
-    end
+if game.PlaceId == 7560156054 then -- clicker simulator
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/Clicker%20simulator"))();
+elseif game.PlaceId == 8540346411 then -- Rebirth Champions
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/rebirth%20champion%20x.txt',true))()
+elseif game.PlaceId == 6299805723 then -- Anime Fighters Simulator
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/afszen1.txt',true))()
+elseif game.PlaceId == 286090429 then -- Arsenal
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/Arsenal%20by%20kaizen',true))()
+elseif game.PlaceId == 6677985923 then -- Millionaire empire tycoon
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/Millionaire%20empire%20tycoon%20bykaizen',true))()
+elseif game.PlaceId == 8137333410 then -- Muscle Legends
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/Color%20by%20number',true))()
+else
+game.Players.LocalPlayer:Kick("Game not supported")
 end
-
-local loader = lib:CreateWindow("Zen Hub - Loader")
-loader:CreateLabel("Press Load to get started.")
-loader:CreateButton("Load", function()
-    init(loader)
-end)
