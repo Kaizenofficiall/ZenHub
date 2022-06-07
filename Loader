@@ -10,6 +10,8 @@ elseif game.PlaceId == 6677985923 then -- Millionaire empire tycoon
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/Millionaire%20empire%20tycoon%20bykaizen',true))()
 elseif game.PlaceId == 8137333410 then -- Muscle Legends
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/Color%20by%20number',true))()
+elseif game.PlaceId == 221718525 then -- Muscle Legends
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/Ninja%20tycoon',true))()
 else
 game.Players.LocalPlayer:Kick("Game not supported")
 end
