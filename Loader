@@ -12,6 +12,8 @@ elseif game.PlaceId == 8137333410 then -- Muscle Legends
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/Color%20by%20number',true))()
 elseif game.PlaceId == 221718525 then -- Muscle Legends
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/Ninja%20tycoon',true))()
+elseif game.PlaceId == 2753915549 then -- Muscle Legends
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/BloxFruit", true))()
 elseif game.PlaceId == 6490016198 then -- Muscle Legends
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/Bubble%20gum%20simulator", true))()
 else
