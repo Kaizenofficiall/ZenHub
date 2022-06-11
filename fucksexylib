@@ -21,15 +21,15 @@ _G.WindowBackgroundColor = Color3.fromRGB(12, 12, 12)
 _G.BackgroundItemColor = Color3.fromRGB(20, 20, 20)
 _G.TabWindowColor = Color3.fromRGB(30, 30, 30)
 _G.ContainerColor = Color3.fromRGB(30, 30, 30)
-_G.TitleTextColor = Color3.fromRGB(150, 150, 150)
-_G.ImageColor = Color3.fromRGB(150, 150, 150)
-_G.LineThemeColor = Color3.fromRGB(150, 150, 150)
-_G.TabTextColor = Color3.fromRGB(150, 150, 150)
-_G.TabImageColor = Color3.fromRGB(150, 150, 150)
+_G.TitleTextColor = Color3.fromRGB(255, 255, 255)
+_G.ImageColor = Color3.fromRGB(255, 255, 255)
+_G.LineThemeColor = Color3.fromRGB(255, 255, 255)
+_G.TabTextColor = Color3.fromRGB(255, 255, 255)
+_G.TabImageColor = Color3.fromRGB(255, 255, 255)
 _G.TabThemeColor = Color3.fromRGB(250, 0, 0)
-_G.SectionColor = Color3.fromRGB(150, 150, 150)
-_G.SectionImageColor = Color3.fromRGB(150, 150, 150)
-_G.SectionTextColor = Color3.fromRGB(150, 150, 150)
+_G.SectionColor = Color3.fromRGB(255, 255, 255)
+_G.SectionImageColor = Color3.fromRGB(255, 255, 255)
+_G.SectionTextColor = Color3.fromRGB(255, 255, 255)
 _G.SectionOn = Color3.fromRGB(0, 250, 0)
 
 -- Windows --
@@ -105,7 +105,7 @@ function Blacklib:Window(gametitle)
     BlackTitle.Parent = WindowFrame
     BlackTitle.BackgroundColor3 = _G.WindowBackgroundColor
     BlackTitle.BackgroundTransparency = 1.000
-    BlackTitle.Position = UDim2.new(0, 33, 0, 7)
+    BlackTitle.Position = UDim2.new(0, 25, 0, 7)
     BlackTitle.Size = UDim2.new(0, 50, 0, 25)
     BlackTitle.Font = Enum.Font.GothamBold
     BlackTitle.Text = ""
@@ -121,7 +121,7 @@ function Blacklib:Window(gametitle)
     Space.Size = UDim2.new(0, 10, 0, 25)
     Space.Font = Enum.Font.GothamBold
     Space.Text = "|"
-    Space.TextColor3 = Color3.fromRGB(150, 0, 0)
+    Space.TextColor3 = Color3.fromRGB(255, 255, 255)
     Space.TextSize = 18.000
     
     GameTitle.Name = gametitle or "GameTitle"
@@ -144,7 +144,7 @@ function Blacklib:Window(gametitle)
     MinButton.Position = UDim2.new(0, 535, 0, 7)
     MinButton.Size = UDim2.new(0, 25, 0, 25)
     MinButton.Font = Enum.Font.GothamSemibold
-    MinButton.TextColor3 = Color3.fromRGB(150, 150, 150)
+    MinButton.TextColor3 = Color3.fromRGB(255, 255, 255)
     MinButton.Text = "-"
     MinButton.TextSize = 35.000
     
@@ -156,7 +156,7 @@ function Blacklib:Window(gametitle)
     CloseButton.Position = UDim2.new(0, 560, 0, 7)
     CloseButton.Size = UDim2.new(0, 25, 0, 25)
     CloseButton.Font = Enum.Font.GothamSemibold
-    CloseButton.TextColor3 = Color3.fromRGB(150, 0, 0)
+    CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
     CloseButton.Text = "×"
     CloseButton.TextSize = 30.000
     
@@ -206,7 +206,7 @@ function Blacklib:Window(gametitle)
     PlaLab.Font = Enum.Font.Code
     PlaLab.Text = "Zen Hub"
     PlaLab.TextSize = 13.000
-    PlaLab.TextColor3 = Color3.fromRGB(255, 0, 0)
+    PlaLab.TextColor3 = Color3.fromRGB(255, 255, 255)
     PlaLab.TextXAlignment = Enum.TextXAlignment.Center
     PlaLab.TextScaled = true
     PlaLab.TextWrapped = true
@@ -388,7 +388,7 @@ function Blacklib:Window(gametitle)
     end)
     spawn(function()
         while task.wait() do
-            titlefunc:Refresh("") wait(.2) titlefunc:Refresh("B") wait(.2) titlefunc:Refresh("Bl") wait(.2) titlefunc:Refresh("Bla") wait(.2) titlefunc:Refresh("Blac") wait(.2) titlefunc:Refresh("Black") wait(.2) titlefunc:Refresh("BlackT") wait(.2) titlefunc:Refresh("BlackTr") wait(.2) titlefunc:Refresh("BlackTra") wait(.2) titlefunc:Refresh("BlackTrap") wait(.9) titlefunc:Refresh("BlackTra") wait(.2) titlefunc:Refresh("BlackTr") wait(.2) titlefunc:Refresh("BlackT") wait(.2) titlefunc:Refresh("Black") wait(.2) titlefunc:Refresh("Blac") wait(.2) titlefunc:Refresh("Bla") wait(.2) titlefunc:Refresh("Bl") wait(.2) titlefunc:Refresh("B") wait(.2) titlefunc:Refresh("") wait(.2) wait(.3)
+            titlefunc:Refresh("") wait(.2) titlefunc:Refresh("Z") wait(.2) titlefunc:Refresh("Ze") wait(.2) titlefunc:Refresh("Zen") wait(.2) titlefunc:Refresh("Zen ") wait(.2) titlefunc:Refresh("Zen H") wait(.2) titlefunc:Refresh("Zen Hu") wait(.2) titlefunc:Refresh("Zen Hub") wait(.2) titlefunc:Refresh("Zen Hu") wait(.2) titlefunc:Refresh("Zen H") wait(.9) titlefunc:Refresh("BlackTra") wait(.2) titlefunc:Refresh("Zen ") wait(.2) titlefunc:Refresh("Zen") wait(.2) titlefunc:Refresh("Ze") wait(.2) titlefunc:Refresh("Blac") wait(.2) titlefunc:Refresh("Z") wait(.2) titlefunc:Refresh("") wait(.2) wait(.3)
         end
     end)
     -- End Windows --
@@ -484,7 +484,7 @@ function Blacklib:Window(gametitle)
         NotificationTitle.ZIndex = 3
         NotificationTitle.Font = Enum.Font.Code
         NotificationTitle.Text = titledesc or "Notification"
-        NotificationTitle.TextColor3 = Color3.fromRGB(255, 0, 0)
+        NotificationTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
         NotificationTitle.TextSize = 22.000
         
         Line.Name = "Line"
