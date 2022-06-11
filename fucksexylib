@@ -26,7 +26,7 @@ _G.ImageColor = Color3.fromRGB(255, 255, 255)
 _G.LineThemeColor = Color3.fromRGB(255, 255, 255)
 _G.TabTextColor = Color3.fromRGB(255, 255, 255)
 _G.TabImageColor = Color3.fromRGB(255, 255, 255)
-_G.TabThemeColor = Color3.fromRGB(250, 0, 0)
+_G.TabThemeColor = Color3.fromRGB(255, 255, 255)
 _G.SectionColor = Color3.fromRGB(255, 255, 255)
 _G.SectionImageColor = Color3.fromRGB(255, 255, 255)
 _G.SectionTextColor = Color3.fromRGB(255, 255, 255)
@@ -110,7 +110,7 @@ function Blacklib:Window(gametitle)
     BlackTitle.Font = Enum.Font.GothamBold
     BlackTitle.Text = ""
     BlackTitle.TextColor3 = _G.TitleTextColor
-    BlackTitle.TextSize = 15.000
+    BlackTitle.TextSize = 17.000
     BlackTitle.TextXAlignment = Enum.TextXAlignment.Left
     
     Space.Name = "Space"
@@ -362,24 +362,40 @@ function Blacklib:Window(gametitle)
             mintoggle = not mintoggle
     end)
     
-    function osfunc:Refresh(textadd)
+    function Times:Refresh(textadd)
         ServerTime.Text = textadd
     end
-    function osfunc2:Refresh(textadd2)
+    function Client:Refresh(textadd2)
         ServerDate.Text = textadd2
     end
     function titlefunc:Refresh(text)
         BlackTitle.Text = text
     end
     local function UpdateOS()
-        local date = os.date("*t")
-        local hour = (date.hour) % 24
-        local ampm = hour < 12 and "AM" or "PM"
-        local timezone = string.format("%02i:%02i:%02i %s", ((hour -1) % 12) + 1, date.min, date.sec, ampm)
-        local datetime = string.format("%02d/%02d/%04d", date.day, date.month, date.year)
-        osfunc:Refresh("Time : " .. timezone)
-        osfunc2:Refresh("Date : " .. datetime .. " [UTC]")
+        function UpdateClient()
+    local Ping = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
+    local Fps = workspace:GetRealPhysicsFPS()
+    Client:Refresh("Fps : "..Fps.." Ping : "..Ping)
+end
+end
+
+spawn(function()
+    while true do wait(.1)
+        UpdateClient()
     end
+end)
+        local function UpdateTime()
+	  local GameTime = math.floor(workspace.DistributedGameTime+0.5)
+	  local Hour = math.floor(GameTime/(60^2))%24
+	  local Minute = math.floor(GameTime/(60^1))%60
+	  local Second = math.floor(GameTime/(60^0))%60
+	  Times:Refresh("Hour : "..Hour.." Minute : "..Minute.." Second : "..Second)
+   end
+spawn(function()
+	while wait() do
+		 UpdateTime()
+	  end
+end)
     spawn(function()
         while true do
             UpdateOS()
@@ -388,7 +404,7 @@ function Blacklib:Window(gametitle)
     end)
     spawn(function()
         while task.wait() do
-            titlefunc:Refresh("") wait(.2) titlefunc:Refresh("Z") wait(.2) titlefunc:Refresh("Ze") wait(.2) titlefunc:Refresh("Zen") wait(.2) titlefunc:Refresh("Zen ") wait(.2) titlefunc:Refresh("Zen H") wait(.2) titlefunc:Refresh("Zen Hu") wait(.2) titlefunc:Refresh("Zen Hub") wait(.2) titlefunc:Refresh("Zen Hu") wait(.2) titlefunc:Refresh("Zen H") wait(.9) titlefunc:Refresh("BlackTra") wait(.2) titlefunc:Refresh("Zen ") wait(.2) titlefunc:Refresh("Zen") wait(.2) titlefunc:Refresh("Ze") wait(.2) titlefunc:Refresh("Blac") wait(.2) titlefunc:Refresh("Z") wait(.2) titlefunc:Refresh("") wait(.2) wait(.3)
+            titlefunc:Refresh("") wait(.2) titlefunc:Refresh("Z") wait(.2) titlefunc:Refresh("Ze") wait(.2) titlefunc:Refresh("Zen") wait(.2) titlefunc:Refresh("Zen ") wait(.2) titlefunc:Refresh("Zen H") wait(.2) titlefunc:Refresh("Zen Hu") wait(.2) titlefunc:Refresh("Zen Hub") wait(.2) titlefunc:Refresh("Zen Hu") wait(.2) titlefunc:Refresh("Zen H") wait(.9) titlefunc:Refresh("Zen ") wait(.2) titlefunc:Refresh("Ze") wait(.2) titlefunc:Refresh("Z") wait(.2) titlefunc:Refresh("") wait(.2) wait(.3)
         end
     end)
     -- End Windows --
