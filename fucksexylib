@@ -362,40 +362,25 @@ function Blacklib:Window(gametitle)
             mintoggle = not mintoggle
     end)
     
-    function Times:Refresh(textadd)
+    function osfunc:Refresh(textadd)
         ServerTime.Text = textadd
     end
-    function Client:Refresh(textadd2)
+    function osfunc2:Refresh(textadd2)
         ServerDate.Text = textadd2
     end
     function titlefunc:Refresh(text)
         BlackTitle.Text = text
     end
-    local function UpdateOS()
-        function UpdateClient()
-    local Ping = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
-    local Fps = workspace:GetRealPhysicsFPS()
-    Client:Refresh("Fps : "..Fps.." Ping : "..Ping)
-end
-end
 
-spawn(function()
-    while true do wait(.1)
-        UpdateClient()
+    local function UpdateOS()
+        local date = os.date("*t")
+        local hour = (date.hour) % 24
+        local ampm = hour < 12 and "AM" or "PM"
+        local timezone = string.format("%02i:%02i:%02i %s", ((hour -1) % 12) + 1, date.min, date.sec, ampm)
+        local datetime = string.format("%02d/%02d/%04d", date.day, date.month, date.year)
+        osfunc:Refresh("Time : " .. timezone)
+        osfunc2:Refresh("Date : " .. datetime .. " [" .. code .. "]")
     end
-end)
-        local function UpdateTime()
-	  local GameTime = math.floor(workspace.DistributedGameTime+0.5)
-	  local Hour = math.floor(GameTime/(60^2))%24
-	  local Minute = math.floor(GameTime/(60^1))%60
-	  local Second = math.floor(GameTime/(60^0))%60
-	  Times:Refresh("Hour : "..Hour.." Minute : "..Minute.." Second : "..Second)
-   end
-spawn(function()
-	while wait() do
-		 UpdateTime()
-	  end
-end)
     spawn(function()
         while true do
             UpdateOS()
