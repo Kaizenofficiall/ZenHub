@@ -115,7 +115,7 @@ Frame.Name = "Frame Line"
                 Frame.BackgroundTransparency = 0
                 Frame.BorderSizePixel = 0
                 Frame.Position = UDim2.new(0.1339285731, 0, 0.0564263314, 0)
-                Frame.Size = UDim2.new(0, 600, 0, 2) it
+                Frame.Size = UDim2.new(0, 600, 0, 2)
 
 WindowStroke.Name = "WindowStroke"
     WindowStroke.Parent = Main
