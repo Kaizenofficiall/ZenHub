@@ -204,10 +204,7 @@ LoadText.Text = "Loading..."
 
 local LocalizationService = game:GetService("LocalizationService")
 local player = game.Players.LocalPlayer
- 
-local result, code = pcall(function()
-    return LocalizationService:GetCountryRegionForPlayerAsync(player)
-end)   
+
 
 LoadTitle.Name = "LoadTitle"
 LoadTitle.Parent = LoadFrame
@@ -279,7 +276,6 @@ TweenService:Create(
 Barload,
 TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 {BackgroundTransparency = 1}
-WindowStroke1.Visible = false
 ):Play()
 TweenService:Create(
 LoadText,
@@ -297,6 +293,7 @@ wait(.6)
 LoadFrame:TweenSize(UDim2.new(0, 0,0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
 
 wait(.5)
+WindowStroke1.Visible = false
 Main.Visible = true
 
 Main:TweenSize(UDim2.new(0, 560, 0, 319), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
