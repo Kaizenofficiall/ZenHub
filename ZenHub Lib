@@ -288,11 +288,6 @@ LoadTitle,
 TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 {TextTransparency = 1}
 ):Play()
-TweenService:Create(
-WindowStroke1,
-TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-{BackgroundTransparency= 1}
-):Play()
 
 wait(.6)
 
@@ -300,6 +295,7 @@ LoadFrame:TweenSize(UDim2.new(0, 0,0, 0), Enum.EasingDirection.Out, Enum.EasingS
 
 wait(.5)
 Main.Visible = true
+WindowStroke1:Destroy()
 
 Main:TweenSize(UDim2.new(0, 560, 0, 319), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
 
