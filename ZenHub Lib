@@ -167,10 +167,10 @@ LoadFrame.ClipsDescendants = true
 LoadFrame.Position = UDim2.new(0.499739647, 0, 0.499451756, 0)
 LoadFrame.Size = UDim2.new(0, 0, 0, 0)
 
-UICorner.Parent = Main
+UICorner.Parent = LoadFrame
 
 WindowStroke1.Name = "WindowStroke1"
-    WindowStroke1.Parent = SazaMain
+    WindowStroke1.Parent = LoadFrame
     WindowStroke1.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
     WindowStroke1.Color = Color3.fromRGB(255,255,255)
     WindowStroke1.LineJoinMode = Enum.LineJoinMode.Round
