@@ -202,10 +202,6 @@ LoadText.TextSize = 18.000
 LoadText.TextTransparency = 1
 LoadText.Text = "Loading..."
 
-local LocalizationService = game:GetService("LocalizationService")
-local player = game.Players.LocalPlayer
-
-
 LoadTitle.Name = "LoadTitle"
 LoadTitle.Parent = LoadFrame
 LoadTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -242,17 +238,22 @@ TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 wait(.6)
 
 Barload:TweenSize(UDim2.new(0, 50,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
-LoadText.Text = "Checking game..."
+LoadText.Text = "Getting Data..."
 
 wait(1)
 
 Barload:TweenSize(UDim2.new(0, 100,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
-LoadText.Text = "Getting data..."
+LoadText.Text =  "Your Device is Mobile"
 
 wait(1)
 
 Barload:TweenSize(UDim2.new(0, 150,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
-LoadText.Text = "Hello " ..game.Players.LocalPlayer
+LoadText.Text = "Checking Game"
+
+wait(1)
+
+Barload:TweenSize(UDim2.new(0, 150,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
+LoadText.Text = "Game Support"
 
 wait(1)
 
