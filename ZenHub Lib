@@ -114,8 +114,8 @@ Frame.Name = "Frame Line"
                 Frame.BackgroundColor3 = Color3.fromRGB(255,255,255)
                 Frame.BackgroundTransparency = 0
                 Frame.BorderSizePixel = 0
-                Frame.Position = UDim2.new(0.0339285731, 0, 1.4564263314, 0)
-                Frame.Size = UDim2.new(0, 600, 0, 2)
+                Frame.Position = UDim2.new(0.1339285731, 0, 0.0564263314, 0)
+                Frame.Size = UDim2.new(0, 600, 0, 2) it
 
 WindowStroke.Name = "WindowStroke"
     WindowStroke.Parent = Main
