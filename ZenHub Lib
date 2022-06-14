@@ -256,7 +256,6 @@ wait(1)
 
 Barload:TweenSize(UDim2.new(0, 150,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 LoadText.Text = "Hello " ..game.Players.LocalPlayer
-.DisplayName.. " From: ".. code
 
 wait(1)
 
