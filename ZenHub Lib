@@ -114,7 +114,7 @@ Frame.Name = "Frame Line"
                 Frame.BackgroundColor3 = Color3.fromRGB(255,255,255)
                 Frame.BackgroundTransparency = 0
                 Frame.BorderSizePixel = 0
-                Frame.Position = UDim2.new(0.0339285731, 0, 0.4564263314, 0)
+                Frame.Position = UDim2.new(0.0339285731, 0, 0.0064263314, 0)
                 Frame.Size = UDim2.new(0, 550, 0, 2)
 
 WindowStroke.Name = "WindowStroke"
@@ -122,7 +122,7 @@ WindowStroke.Name = "WindowStroke"
     WindowStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
     WindowStroke.Color = Color3.fromRGB(255,255,255)
     WindowStroke.LineJoinMode = Enum.LineJoinMode.Round
-    WindowStroke.Thickness = 2
+    WindowStroke.Thickness = 1
     WindowStroke.Transparency = 0
     WindowStroke.Enabled = true
     WindowStroke.Archivable = true
@@ -274,21 +274,9 @@ LoadText.Text = "Checking Game"
 
 wait(1)
 
-   if game.PlaceId == 2753915549 then
-    Barload:TweenSize(UDim2.new(0, 130,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
-LoadText.Text = "Blox Fruit | Sea1"
-    if game.PlaceId == 4442272183 then
-     Barload:TweenSize(UDim2.new(0, 130,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
-LoadText.Text = "Blox Fruit | Sea2"
-    if game.PlaceId == 7449423635 then
 Barload:TweenSize(UDim2.new(0, 130,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
-LoadText.Text = "Blox Fruit | Sea3"
-else
-Barload:TweenSize(UDim2.new(0, 130,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
-LoadText.Text = "Game Not Support"
-end
-end
-end
+LoadText.Text = "Game Support"
+
 wait(1)
 
 Barload:TweenSize(UDim2.new(0, 160,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
