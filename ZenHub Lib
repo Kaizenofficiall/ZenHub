@@ -167,6 +167,14 @@ local LoadTitle = Instance.new("TextLabel")
 local UICorner1 = Instance.new("UICorner")
 local WindowStroke1 = Instance.new("UIStroke")
 
+local LocalizationService = game:GetService("LocalizationService")
+local player = game.Players.LocalPlayer
+ 
+local result, code = pcall(function()
+    return LocalizationService:GetCountryRegionForPlayerAsync(player)
+end)   
+
+
 LoadFrame.Name = "LoadFrame"
 LoadFrame.Parent = knixhub
 LoadFrame.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -218,7 +226,7 @@ LoadTitle.BackgroundTransparency = 1.000
 LoadTitle.Position = UDim2.new(0.0432743616, 0, 0.1125011, 0)
 LoadTitle.Size = UDim2.new(0, 200, 0, 23)
 LoadTitle.Font = Enum.Font.GothamSemibold
-LoadTitle.Text = "NOOB HUB"
+LoadTitle.Text = "ZEN HUB"
 LoadTitle.TextColor3 = Color3.fromRGB(68, 68, 68)
 LoadTitle.TextSize = 12.000
 LoadTitle.TextXAlignment = Enum.TextXAlignment.Left
@@ -267,7 +275,7 @@ LoadText.Text = "Game Support"
 wait(1)
 
 Barload:TweenSize(UDim2.new(0, 150,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
-LoadText.Text = "Executing script..."
+LoadText.Text = "Hello " ..game.Players.LocalPlayer.DisplayName.. " From: ".. code
 
 wait(1)
 
