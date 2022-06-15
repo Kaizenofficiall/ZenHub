@@ -108,7 +108,15 @@ Main.Position = UDim2.new(0.5, 0, 0.5, 0)
 Main.Size = UDim2.new(0, 0, 0, 0)
 Main.ClipsDescendants = true
 Main.Visible = false
-     
+
+Frame.Name = "Frame Line"
+                Frame.Parent = Main
+                Frame.BackgroundColor3 = Color3.fromRGB(255,255,255)
+                Frame.BackgroundTransparency = 0
+                Frame.BorderSizePixel = 0
+                Frame.Position = UDim2.new(0.0339285731, 0, 0.0064263314, 0)
+                Frame.Size = UDim2.new(0, 550, 0, 2)
+
 WindowStroke.Name = "WindowStroke"
     WindowStroke.Parent = Main
     WindowStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
@@ -128,7 +136,7 @@ TabHold.BackgroundTransparency = 1.000
 TabHold.Position = UDim2.new(0.0339285731, 0, 0.147335425, 0)
 TabHold.Size = UDim2.new(0, 107, 0, 254)
 TabHold.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TabHold.BorderSizePixel = 1
+TabHold.BorderSizePixel = 0
 
 TabHoldLayout.Name = "TabHoldLayout"
 TabHoldLayout.Parent = TabHold
@@ -248,37 +256,37 @@ TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 
 wait(.6)
 
-Barload:TweenSize(UDim2.new(0, 30,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
+Barload:TweenSize(UDim2.new(0, 50,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 LoadText.Text = "Getting Data..."
 
 wait(1)
 
-Barload:TweenSize(UDim2.new(0, 50,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
+Barload:TweenSize(UDim2.new(0, 100,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 LoadText.Text = "Hello " ..game.Players.LocalPlayer.DisplayName.. " From: ".. code
 
 wait(1)
 
-Barload:TweenSize(UDim2.new(0, 80,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
+Barload:TweenSize(UDim2.new(0, 150,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 LoadText.Text =  "Your Device is Mobile"
 
 wait(1)
 
-Barload:TweenSize(UDim2.new(0, 110,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
+Barload:TweenSize(UDim2.new(0, 200,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 LoadText.Text = "Checking Game"
 
 wait(1)
 
-Barload:TweenSize(UDim2.new(0, 130,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
+Barload:TweenSize(UDim2.new(0, 250,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 LoadText.Text = "Game Support"
 
 wait(1)
 
-Barload:TweenSize(UDim2.new(0, 160,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
+Barload:TweenSize(UDim2.new(0, 300,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 LoadText.Text = "Getting ready.."
 
 wait(1)
 
-Barload:TweenSize(UDim2.new(0, 190,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
+Barload:TweenSize(UDim2.new(0, 350,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 LoadText.Text = "Ready!"
 
 wait(1)
@@ -354,7 +362,7 @@ NotificationHold.Parent = Main
 NotificationHold.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 NotificationHold.BackgroundTransparency = 1.000
 NotificationHold.BorderSizePixel = 0
-NotificationHold.Size = UDim2.new(0, 560, 0, 319)
+NotificationHold.Size = UDim2.new(0, 560, 0, 409)
 NotificationHold.AutoButtonColor = false
 NotificationHold.Font = Enum.Font.SourceSans
 NotificationHold.Text = ""
@@ -1530,6 +1538,7 @@ local LabelTitle = Instance.new("TextLabel")
 
 Label.Name = "Button"
 Label.Parent = Tab
+Label.BackgroundTransparency = 1.00
 Label.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 Label.Size = UDim2.new(0, 363, 0, 42)
 Label.AutoButtonColor = false
@@ -1552,7 +1561,7 @@ LabelTitle.Font = Enum.Font.Gotham
 LabelTitle.Text = text
 LabelTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 LabelTitle.TextSize = 14.000
-LabelTitle.TextXAlignment = Enum.TextXAlignment.Left
+LabelTitle.TextXAlignment = Enum.TextXAlignment.Center
 
 Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
 end
