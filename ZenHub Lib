@@ -254,37 +254,49 @@ TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 
 wait(.6)
 
-Barload:TweenSize(UDim2.new(0, 50,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
+Barload:TweenSize(UDim2.new(0, 30,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 LoadText.Text = "Getting Data..."
 
 wait(1)
 
-Barload:TweenSize(UDim2.new(0, 100,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
-LoadText.Text =  "Your Device is Mobile"
-
-wait(1)
-
-Barload:TweenSize(UDim2.new(0, 150,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
-LoadText.Text = "Checking Game"
-
-wait(1)
-
-Barload:TweenSize(UDim2.new(0, 150,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
-LoadText.Text = "Game Support"
-
-wait(1)
-
-Barload:TweenSize(UDim2.new(0, 150,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
+Barload:TweenSize(UDim2.new(0, 50,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 LoadText.Text = "Hello " ..game.Players.LocalPlayer.DisplayName.. " From: ".. code
 
 wait(1)
 
-Barload:TweenSize(UDim2.new(0, 200,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
+Barload:TweenSize(UDim2.new(0, 80,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
+LoadText.Text =  "Your Device is Mobile"
+
+wait(1)
+
+Barload:TweenSize(UDim2.new(0, 110,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
+LoadText.Text = "Checking Game"
+
+wait(1)
+
+   if game.PlaceId == 2753915549 then
+    Barload:TweenSize(UDim2.new(0, 130,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
+LoadText.Text = "Blox Fruit | Sea1"
+    if game.PlaceId == 4442272183 then
+     Barload:TweenSize(UDim2.new(0, 130,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
+LoadText.Text = "Blox Fruit | Sea2"
+    if game.PlaceId == 7449423635 then
+Barload:TweenSize(UDim2.new(0, 130,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
+LoadText.Text = "Blox Fruit | Sea3"
+else
+Barload:TweenSize(UDim2.new(0, 130,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
+LoadText.Text = "Game Not Support"
+end
+end
+end
+wait(1)
+
+Barload:TweenSize(UDim2.new(0, 160,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 LoadText.Text = "Getting ready.."
 
 wait(1)
 
-Barload:TweenSize(UDim2.new(0, 292,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
+Barload:TweenSize(UDim2.new(0, 190,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 LoadText.Text = "Ready!"
 
 wait(1)
