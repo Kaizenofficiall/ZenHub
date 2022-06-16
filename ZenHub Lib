@@ -97,7 +97,6 @@ local TabFolder = Instance.new("Folder")
 local UICorner = Instance.new("UICorner")
 local DragFrame = Instance.new("Frame")
 local WindowStroke = Instance.new("UIStroke")
-local Frame = Instance.new("Frame")
 
 Main.Name = "Main"
 Main.Parent = knixhub
@@ -108,14 +107,6 @@ Main.Position = UDim2.new(0.5, 0, 0.5, 0)
 Main.Size = UDim2.new(0, 0, 0, 0)
 Main.ClipsDescendants = true
 Main.Visible = false
-
-Frame.Name = "Frame Line"
-                Frame.Parent = Main
-                Frame.BackgroundColor3 = Color3.fromRGB(255,255,255)
-                Frame.BackgroundTransparency = 0
-                Frame.BorderSizePixel = 0
-                Frame.Position = UDim2.new(0.0339285731, 0, 0.000263314, 0)
-                Frame.Size = UDim2.new(0, 550, 0, 2)
 
 WindowStroke.Name = "WindowStroke"
     WindowStroke.Parent = Main
@@ -384,7 +375,7 @@ NotificationFrame.BorderSizePixel = 0
 NotificationFrame.ClipsDescendants = true
 NotificationFrame.Position = UDim2.new(0.5, 0, 0.498432577, 0)
 
-NotificationFrame:TweenSize(UDim2.new(0, 164,0, 193), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
+NotificationFrame:TweenSize(UDim2.new(0, 300,0, 200), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
 
 OkayBtn.Name = "OkayBtn"
 OkayBtn.Parent = NotificationFrame
@@ -411,7 +402,7 @@ OkayBtnTitle.Font = Enum.Font.Gotham
 OkayBtnTitle.Text = textbtn
 OkayBtnTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 OkayBtnTitle.TextSize = 14.000
-OkayBtnTitle.TextXAlignment = Enum.TextXAlignment.Left
+OkayBtnTitle.TextXAlignment = Enum.TextXAlignment.Center
 
 NotificationTitle.Name = "NotificationTitle"
 NotificationTitle.Parent = NotificationFrame
