@@ -307,7 +307,7 @@ wait(.5)
 Main.Visible = true
 WindowStroke1:Destroy()
 
-Main:TweenSize(UDim2.new(0, 560, 0, 319), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
+Main:TweenSize(UDim2.new(0, 560, 0, 270), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
 
 
 MakeDraggable(DragFrame, Main)
@@ -421,7 +421,7 @@ NotificationDesc.Parent = NotificationFrame
 NotificationDesc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 NotificationDesc.BackgroundTransparency = 1.000
 NotificationDesc.Position = UDim2.new(0.0670000017, 0, 0.218999997, 0)
-NotificationDesc.Size = UDim2.new(0, 143, 0, 91)
+NotificationDesc.Size = UDim2.new(0, 300, 0, 91)
 NotificationDesc.Font = Enum.Font.Gotham
 NotificationDesc.Text = textdesc
 NotificationDesc.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -516,7 +516,7 @@ Tab.Name = "Tab"
 Tab.Parent = TabFolder
 Tab.Active = true
 Tab.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
-Tab.BackgroundTransparency = 0
+Tab.BackgroundTransparency = 0.2
 Tab.BorderSizePixel = 0
 Tab.Position = UDim2.new(0.25400001, 0, 0.147, 0)
 Tab.Size = UDim2.new(0, 373, 0, 254)
@@ -527,7 +527,7 @@ Tab.Visible = false
 TabLayout.Name = "TabLayout"
 TabLayout.Parent = Tab
 TabLayout.SortOrder = Enum.SortOrder.LayoutOrder
-TabLayout.Padding = UDim.new(0, 6)
+TabLayout.Padding = UDim.new(0, 8)
 
 if fs == false then
 fs = true
