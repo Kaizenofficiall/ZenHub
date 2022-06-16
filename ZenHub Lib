@@ -516,7 +516,7 @@ Tab.Name = "Tab"
 Tab.Parent = TabFolder
 Tab.Active = true
 Tab.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
-Tab.BackgroundTransparency = 0.2
+Tab.BackgroundTransparency = 0.9
 Tab.BorderSizePixel = 0
 Tab.Position = UDim2.new(0.25400001, 0, 0.147, 0)
 Tab.Size = UDim2.new(0, 373, 0, 254)
@@ -531,7 +531,7 @@ TabLayout.Padding = UDim.new(0, 8)
 
 if fs == false then
 fs = true
-TabBtnIndicator.Size = UDim2.new(0, 13, 0, 2)
+TabBtnIndicator.Size = UDim2.new(0, 10, 0, 2)
 TabTitle.TextColor3 = Color3.fromRGB(255,255,255)
 Tab.Visible = true
 end
