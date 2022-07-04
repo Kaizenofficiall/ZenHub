@@ -14,6 +14,8 @@ elseif game.PlaceId == 221718525 then -- Muscle Legends
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/Ninja%20tycoon',true))()
 elseif game.PlaceId == 6490016198 then -- Muscle Legends
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/Bubble%20gum%20simulator", true))()
+elseif game.PlaceId == 6875469709 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/Strongest%20simulator", true))()
 else
 game.Players.LocalPlayer:Kick("Game not supported")
 end
