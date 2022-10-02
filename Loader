@@ -2,20 +2,43 @@ if game.PlaceId == 7560156054 then -- clicker simulator
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/Clicker%20simulator"))();
 elseif game.PlaceId == 8540346411 then -- Rebirth Champions
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/rebirth%20champion%20x.txt',true))()
+
 elseif game.PlaceId == 6299805723 then -- Anime Fighters Simulator
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/afszen1.txt',true))()
+
 elseif game.PlaceId == 286090429 then -- Arsenal
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/Arsenal%20by%20kaizen',true))()
+
 elseif game.PlaceId == 6677985923 then -- Millionaire empire tycoon
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/Millionaire%20empire%20tycoon%20bykaizen',true))()
-elseif game.PlaceId == 8137333410 then -- Muscle Legends
+
+elseif game.PlaceId == 8137333410 then -- color by number
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/Color%20by%20number',true))()
-elseif game.PlaceId == 221718525 then -- Muscle Legends
+elseif game.PlaceId == 221718525 then -- ninja tycoon
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/Ninja%20tycoon',true))()
-elseif game.PlaceId == 6490016198 then -- Muscle Legends
+
+elseif game.PlaceId == 2512643572 then -- Bubble gum simulator
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/Bubble%20gum%20simulator", true))()
-elseif game.PlaceId == 6875469709 then
+
+elseif game.PlaceId == 6875469709 then -- strongest punch simulator
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/KaiZen/main/Strongest%20simulator", true))()
+
+elseif game.PlaceId == 914010731 then -- ro ghoul
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/Roghoul", true))()
+
+elseif game.PlaceId == 2788229376 then -- da hood
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MASTER8245/Zen-Hub/main/Da%20Hood%20V0.1", true))()
+
+-------Blox fruit--------------
+elseif game.PlaceId == 2753915549 then -- blox fruit world 1
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/bloxfrui%20v0.3", true))()
+
+elseif game.PlaceId == 4442272183 then -- blox fruit world 2
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/bloxfrui%20v0.3", true))()
+
+elseif game.PlaceId == 7449423635 then -- blox fruit world 3
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/bloxfrui%20v0.3", true))()
+
 else
-game.Players.LocalPlayer:Kick("Game not supported")
+  game.Players.LocalPlayer:Kick("Game not supported")
 end
