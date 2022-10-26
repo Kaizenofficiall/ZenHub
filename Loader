@@ -31,13 +31,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/MASTER8245/Zen-Hub/ma
 
 -------Blox fruit--------------
 elseif game.PlaceId == 2753915549 then -- blox fruit world 1
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/bloxfrui%20v0.3", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/bloxfruit17.3", true))()
 
 elseif game.PlaceId == 4442272183 then -- blox fruit world 2
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/bloxfrui%20v0.3", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/bloxfruit17.3", true))()
 
 elseif game.PlaceId == 7449423635 then -- blox fruit world 3
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/bloxfrui%20v0.3", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/bloxfruit17.3", true))()
 
 else
   game.Players.LocalPlayer:Kick("Game not supported")
