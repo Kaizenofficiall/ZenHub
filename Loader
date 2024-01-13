@@ -182,6 +182,6 @@ Textbtn2.MouseButton1Click:Connect(function()
     }
   ):Play()
 Notification("Paste it in Browser")
-setclipboard("https://discord.gg/m4EjaHF67T")
+setclipboard("https://discord.com/invite/XxFnz6MNQ2")
   end)
 
